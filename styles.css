@@ -1,0 +1,494 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  height: 70px;
+}
+.remove {
+  position: static !important;
+}
+.btn-div {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  align-items: center;
+}
+a {
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: white;
+}
+
+.intro {
+  margin-top: -92px;
+  position: relative;
+  height: 100vh;
+  background-image: url(./images/CT_SkillTest_v3-44.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1;
+}
+.text {
+  font-size: 60px;
+  line-height: 20px;
+  letter-spacing: -10px;
+  color: rgb(57, 57, 82);
+}
+.text h1:first-child {
+  color: rgb(80, 79, 79);
+}
+.intro .cover {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  background-image: url(./images/CT_SkillTest_v3-45.png);
+  opacity: 0.15;
+}
+.btm-nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 3;
+  width: 100%;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.btm-nav .logo {
+  display: flex;
+  width: 155px;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo p {
+  margin: 0 0 0 -10px;
+  font-size: 17px;
+  line-height: 15px;
+  font-weight: 600;
+  color: rgb(46, 46, 63);
+}
+.logo p:first-child {
+  color: rgb(129, 127, 127);
+}
+.logo img {
+  border: 1px solid rgb(80, 79, 79);
+  border-radius: 50%;
+}
+.btm-nav a {
+  color: rgb(80, 79, 79);
+}
+.btm-nav .line {
+  background: rgb(80, 79, 79);
+}
+#history {
+  background-image: url(./images/CT_SkillTest_v3-35.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  padding: 0 20px;
+  position: relative;
+  background-position: 0 30%;
+}
+#history .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+.history-top {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0 0;
+}
+.history-top-head {
+  display: flex;
+}
+.history-top-head span {
+  margin-left: 5px;
+  margin-top: 28px;
+}
+.history-top-head span h2 {
+  line-height: 0;
+  font-size: 150px;
+}
+.history-top h2,
+.history-top h3 {
+  margin: 0;
+}
+.history-top-head h2 {
+  font-size: 120px;
+  line-height: 50px;
+  letter-spacing: -22px;
+  color: rgba(0, 0, 0, 0.2);
+}
+.history-top-head h3 {
+  font-size: 30px;
+  line-height: 0;
+  margin-bottom: -15px;
+  letter-spacing: -4px;
+  color: rgb(32, 38, 56);
+}
+.history-top p {
+  font-size: 14px;
+  margin-top: 25px;
+  margin-left: 70px;
+  line-height: 24px;
+}
+.team-top {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-top-head {
+  display: flex;
+}
+
+.history-top-head {
+  display: flex;
+}
+.team-top-head span {
+  margin-left: 10px;
+  margin-top: 28px;
+}
+.team-top-head span h2 {
+  line-height: 0;
+  font-size: 150px;
+}
+.team-top h2,
+.team-top h3 {
+  margin: 0;
+}
+.team-top-head h2 {
+  font-size: 120px;
+  line-height: 50px;
+  letter-spacing: -16px;
+  color: rgba(0, 0, 0, 0.2);
+}
+.team-top-head h3 {
+  font-size: 30px;
+  line-height: 0;
+  margin-bottom: -15px;
+  letter-spacing: -2px;
+  color: rgb(32, 38, 56);
+}
+.team-top p {
+  font-size: 14px;
+  margin-top: 25px;
+  margin-left: 70px;
+  line-height: 24px;
+  margin-left: 30px;
+}
+.splide {
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
+  background: rgba(39, 71, 99, 0.8);
+  width: 100%;
+  padding: 20px 20px 30px;
+}
+.splide__track {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.splide__track {
+  width: 100%;
+}
+.splide__track img {
+  margin: 0 5px;
+  max-width: 24%;
+}
+.splide__arrow {
+  display: none !important;
+}
+.mountains-nav {
+  background: rgb(39, 71, 99);
+}
+.mountains-btn-div {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.mountains-btn-div button {
+  padding: 7px 20px;
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: 700;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s all ease;
+}
+.bg {
+  background: rgba(255, 255, 255, 0.5) !important;
+  color: rgb(39, 71, 99) !important;
+}
+.line-color {
+  background: rgb(39, 71, 99) !important;
+}
+.mountains-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 2px;
+}
+.wrapper {
+  position: relative;
+  height: 570px;
+}
+.banner1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/CT_SkillTest_v3-11.png);
+  background-position: 20% 50%;
+  opacity: 1;
+  transition: 0.5s all ease;
+}
+.banner2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url(./images/CT_SkillTest_v3-7.png);
+  background-position: 20% 50%;
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+.banner-writeup {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  top: 130px;
+  left: 350px;
+  width: 350px;
+  padding: 20px 40px;
+}
+.banner-writeup p {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 0px;
+}
+.banner-writeup section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-writeup section p {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.footer {
+  background: rgb(39, 71, 99);
+  z-index: 3;
+  width: 100%;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.footer .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer p {
+  color: rgba(255, 255, 255, 0.2) !important;
+}
+.footer .logo p {
+  margin: 0 10px 0;
+  font-size: 20px;
+  line-height: 19px;
+  font-weight: 600;
+}
+.logo img {
+  opacity: 0.3;
+  border: 1px solid rgb(80, 79, 79);
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+}
+.footer-wrap p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 40px;
+    line-height: 20px;
+  }
+  .splide__track img {
+    margin: 0 2px;
+  }
+  .wrapper {
+    height: 450px;
+  }
+  .banner-writeup {
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    padding: 20px;
+  }
+  .banner-writeup p {
+    font-size: 25px;
+    margin: 0;
+  }
+  .banner-writeup section p {
+    font-size: 14px;
+    margin: 20px 0 0;
+  }
+  .footer-wrap {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .footer .logo {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 550px) {
+  a {
+    margin-left: 0px;
+    padding: 0;
+  }
+  .btn-div {
+    width: 150px;
+  }
+  .intro {
+    height: 500px;
+  }
+  .text {
+    font-size: 28px;
+    line-height: 15px;
+    letter-spacing: -7px;
+  }
+  .intro .cover {
+    opacity: 0.2;
+  }
+  .btm-nav .logo {
+    width: 130px;
+  }
+  .logo p {
+    font-size: 13px;
+  }
+  #history {
+    height: 550px;
+  }
+  .history-top {
+    padding: 60px 0 0;
+  }
+  .history-top-head span {
+    margin-top: 24px;
+  }
+  .history-top-head span h2 {
+    font-size: 120px;
+  }
+  .history-top-head h2 {
+    font-size: 100px;
+  }
+  .history-top-head h3 {
+    font-size: 30px;
+    margin-bottom: -7px;
+  }
+  .history-top p {
+    font-size: 14px;
+    margin-left: 0px;
+    color: white;
+  }
+  .team-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .team-top-head span {
+    margin-top: 32px;
+  }
+  .team-top-head span h2 {
+    font-size: 100px;
+  }
+  .team-top-head h2 {
+    font-size: 100px;
+  }
+  .team-top-head h3 {
+    font-size: 30px;
+    margin-bottom: -7px;
+  }
+  .team-top p {
+    font-size: 14px;
+    margin-left: 0px;
+    margin-bottom: 0;
+  }
+  .wrapper {
+    height: 400px;
+  }
+  .banner-writeup {
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+  .banner-writeup p {
+    font-size: 25px;
+  }
+  .banner-writeup section p {
+    font-size: 14px;
+    margin: 15px 0 0;
+  }
+  .footer .logo p {
+    margin: 0 5px 0;
+    font-size: 17px;
+  }
+  .footer-wrap p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
