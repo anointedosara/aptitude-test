@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 10;
   height: 70px;
 }
 .remove {
@@ -364,7 +364,51 @@ a {
   font-weight: 500;
 }
 
-@media screen and (max-width: 768px) {
+
+
+@media screen and (min-width: 768px) {
+  i {
+  display: none !important;
+} 
+}
+.dropdown {
+  display: none
+}
+.dropdown a {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.btm-nav-dropdown {
+  display: none
+}
+.btm-nav-dropdown a {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+.btm-nav-dropdown a .line {
+  background: white;
+}
+
+@media screen and (max-width: 1023px) {
+  .intro {
+    height: 650px;
+  }
+  #history {
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn-div {
+    display: none;
+  }
+  .intro {
+    height: 550px;
+  }
+  #history {
+    height: 650px;
+  }
   .text {
     font-size: 40px;
     line-height: 20px;
@@ -396,6 +440,59 @@ a {
   .footer .logo {
     margin-bottom: 10px;
   }
+  .open {
+    display: block !important;
+  }
+  .btm-nav-open {
+    display: block !important;
+  }
+  i {
+    position: absolute;
+    font-size: 40px;
+    right: 20px;
+    color: white;
+  }
+  .dropdown {
+    position: absolute;
+    left: -20px;
+    top: 0px;
+    height: 0;
+    overflow: hidden;
+    width: calc(100% + 20px);
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    transition: 0.5s all ease;
+  }
+  .dropdown a {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .btm-nav-dropdown {
+    position: absolute;
+    left: -20px;
+    top: 0px;
+    height: 0;
+    overflow: hidden;
+    width: calc(100% + 20px);
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    transition: 0.5s all ease;
+  }
+  .btm-nav-dropdown a {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+.hide-dropdown {
+  display: none !important;
 }
 @media screen and (max-width: 550px) {
   a {
@@ -406,7 +503,7 @@ a {
     width: 150px;
   }
   .intro {
-    height: 500px;
+    height: 550px;
   }
   .text {
     font-size: 28px;
