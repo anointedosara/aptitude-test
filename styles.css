@@ -20,8 +20,8 @@ body {
   z-index: 10;
   height: 70px;
 }
-.remove {
-  position: static !important;
+.add {
+  display: block !important;
 }
 .btn-div {
   display: flex;
@@ -79,11 +79,12 @@ a {
   opacity: 0.15;
 }
 .btm-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   background: white;
   z-index: 3;
   width: 100%;
+  display: none;
 }
 .wrap {
   display: flex;

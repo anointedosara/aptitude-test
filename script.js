@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
   splide.mount();
 });
 
-const topNav = document.querySelector(".top-nav");
+const btmNav = document.querySelector(".btm-nav");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 450) {
-    topNav.classList.add("remove");
+  if (window.scrollY > 500) {
+    btmNav.classList.add("add");
   } else {
-    topNav.classList.remove("remove");
+    btmNav.classList.remove("add");
   }
 });
 
