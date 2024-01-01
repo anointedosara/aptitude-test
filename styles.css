@@ -363,13 +363,40 @@ a {
   font-size: 14px;
   font-weight: 500;
 }
-
-
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-close {
+  display: block !important;
+  position: absolute;
+  top: 70px;
+}
+.modal-image {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 500px;
+}
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 20% 20%;
+}
 
 @media screen and (min-width: 768px) {
   i {
   display: none !important;
-} 
+}
 }
 .dropdown {
   display: none
@@ -542,6 +569,9 @@ a {
     font-size: 14px;
     margin-left: 0px;
     color: white;
+  }
+  .splide {
+    padding: 10px 10px 30px;
   }
   .team-top {
     flex-direction: column;

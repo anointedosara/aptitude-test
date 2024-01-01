@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const topNav = document.querySelector(".top-nav");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 470) {
+  if (window.scrollY > 450) {
     topNav.classList.add("remove");
   } else {
     topNav.classList.remove("remove");
@@ -90,36 +90,20 @@ btmClose.addEventListener("click", () => {
   body.style.overflow = "unset";
 });
 
+const slide = document.querySelectorAll('.splide__slide')
+const modal = document.querySelector('.modal')
+const modalImg = document.querySelector('.modal-img')
+const closeModal = document.querySelector('.modal-close')
 
-let imageToShow = 0;
-
-let showImage = () => {
-    productImages.forEach((productImage, i) => {
-        if (i != imageToShow) {
-            productImage.classList.remove("opacity")
-        } else {
-            productImage.classList.add("opacity")
-        }
-    })
-}
-
-let thumbnails = document.querySelectorAll(".thumbnail")
-let productImages = document.querySelectorAll(".product")
-
-thumbnails.forEach((thumbnail, i) => {
-    thumbnail.onclick = () => {
-        imageToShow = i;
-        thumbnails.forEach(thumbnail => {
-            thumbnail.classList.remove("outline")
-            thumbnail.classList.remove("bg")
-        })
-        if (i === imageToShow) {
-            thumbnail.classList.add("outline")
-            thumbnail.classList.add("bg")
-        }
-        showImage()
-
-    }
+for (let i = 0; i < slide.length; i++) {
+slide[i].addEventListener("click", () => {
+  let src = slide[i].src
+  body.style.overflow = "hidden";
+  modalImg.src = src
+      modal.style.display = 'flex'
 })
-
-showImage()
+}
+closeModal.addEventListener("click", () => {
+  body.style.overflow = "unset";
+  modal.style.display = 'none'
+})
