@@ -524,6 +524,10 @@ a {
     margin-left: 0px;
     padding: 0;
   }
+  .modal-image {
+    width: 100%;
+    height: 300px;
+  }
   .btn-div {
     width: 150px;
   }
