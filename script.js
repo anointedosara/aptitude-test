@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const btmNav = document.querySelector(".btm-nav");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 500) {
+  if (window.scrollY > 550) {
     btmNav.classList.add("add");
   } else {
     btmNav.classList.remove("add");
@@ -73,7 +73,6 @@ let btmClose = document.querySelector(".btm-nav-close");
 let btmDropdown = document.querySelector(".btm-nav-dropdown");
 // open.style.display = "block"
 btmOpen.addEventListener("click", () => {
-  window.scroll(0, 550)
   body.style.overflow = "hidden";
   btmOpen.classList.add("hide-dropdown");
   btmClose.classList.remove("hide-dropdown");

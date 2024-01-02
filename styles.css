@@ -12,12 +12,13 @@ body {
 }
 .top-nav {
   display: flex;
+  position: absolute;
+  top: 0;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  z-index: 10;
+  width: 100%;
+  z-index: 100;
   height: 70px;
 }
 .add {
@@ -48,7 +49,6 @@ a {
 }
 
 .intro {
-  margin-top: -92px;
   position: relative;
   height: 100vh;
   background-image: url(./images/CT_SkillTest_v3-44.png);
@@ -92,6 +92,7 @@ a {
   align-items: center;
   padding: 15px 20px;
   max-width: 800px;
+  width: 100%;
   margin: 0 auto;
 }
 .btm-nav .logo {
@@ -396,7 +397,7 @@ a {
 }
 }
 .dropdown {
-  display: none
+  display: none;
 }
 .dropdown a {
   font-size: 30px;
